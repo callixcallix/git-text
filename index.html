@@ -1,0 +1,114 @@
+HELLO WORLD
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>callix HTML sheet</title>
+        <style>
+            #h01 {background-color: black;
+                    color:white; width: 125px;
+            }
+            #h02 {background-color: black;
+                color:white; width: 125px;
+            }
+            #h03 {background-color: black;
+                color:white; width: 125px;
+                }
+            #footer {text-align: center; border-style:none;
+                        color: blue;
+            }
+        </style>
+        
+    </head>
+    <body>
+<h1>TRY IT YOURSELF</h1>
+<small>By: Angelus Contritos</small>
+<h2 id="h01">Section One</h2>
+<h3>Forms and Links</h3>
+<p>Here I Would like to create a form, fill it and link the submission to a location in another webpage. By so doing, I get to practice HTML forms and links</p>
+<p>To build a form, these are the necessary steps</p>
+<ul style="list-style-type:none">
+    <li><strong>Step One</strong></li>
+    <p>Put in a form tag, usually, a form is accompanied with the action="" attribute. It's function is basically to submit the form to a certain page, say, a php page. A form tag also has the method="" attribute. It is the POST for the form, i.e, it is used to make a post request. Posts are a secure way of adding data to a database.</p>
+    <li><strong>Step Two</strong></li>
+    <p>Next, create a <em>label tag</em>, after the <em>label tag</em> create an <em>input tag</em>. The label is used to indicate the Label of the form, eg. First Name. The input tag on the other hand has the type="" attribute in which the type of input needed is indicated. Also the input tag has a name="" attribute.</p>
+    <li><strong>Step Three</strong></li>
+    <p>Note: When building a form for with an email input, the type="" attribute should be 'email', not 'text'. Again, if you want to create a text area in the form, say a message or comment box, use the <em>textarea tag</em> instead of the <em>label tag</em>, and if you are creating a select list like gender, Marital Status, etc., use the select tag. <br> Each select list has a <em>option tag</em>, the <em>option tag</em> has a value="" attribute where you can input the value (for the server) and the actual text goes between the option tag. <br>When creating an age form, the  type="" attribute is 'number' while the value=" attribute indicates the range. <br>A birthday label has a date type="" attribute.</p>
+    <p>N|B The placeholder="" attribute is used to attach a faint indicator  in the form.</p>
+    <li><strong>Step Four</strong></li> 
+    <p>The last thing needed when building a form is the button input. create an input tag, with the type="" attribute (submit), with name="" Submit and Value="" submit which is the actual text of the button eg. Submit, Alldone etc. <br>Use the <em>button tag</em>to indicate the some sort of function like 'click me' and then use CSS to link it to another site.</p>
+</ul>
+<h2 id="h02">Let's Build</h2>
+        <form action="blog.html" method="POST">
+            <div>
+                 <label>First Name</label>
+                 <input type="text" name="firstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter Last Name">
+           </div>
+           <br>
+           <div>
+               <label>Phone Number</label>
+               <input type="text" name="phoneNumber" placeholder="+234">
+          </div>
+          <br>
+          <div>
+              <label>Address</label>
+              <textarea type="text" name="address" placeholder="Enter Address"></textarea>
+         </div>
+         <br>
+         <div>
+             <label>Email Address</label>
+             <input type="email" name="email"placeholder="Enter email">
+        </div>
+        <br>
+        <label>Gender</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Marital Status</label>
+        <select name="maritalStatus">
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="divorced">Divorced</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <div>
+        <br>
+            <label >Age</label>
+            <input type="number" name="age" value="35">
+        </div>
+        <div>
+            <br>
+                <label >Date of Birth</label>
+                <input type="date" name="dateOfBirth">
+            </div>
+            <div>
+             <br>
+                 <label >Further Remarks</label>
+                 <textarea name="comment"></textarea>
+            </div>
+            <div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            </div>
+            <br>
+            <button><a href="submit.html" target="_blank">Click Me</a></button>
+        </form>
+        <br>
+        <h2 id="h03">Conclusion</h2>
+        <p>This is the end of this <cite> try it yourself series</cite>. Notice that a lot of tags, styles, elements have been touched in this article. And while they have not been explained properly in this series, they will be explained in subsequent series. <br> Also, this exercise is mostly HTML, no CSS really, that it why it has appeared as skeletal as you are seeing it now</p>
+        <br>
+        <br>
+        <br>
+        <footer id="footer">
+            <p>Copyright &copy; 2021 Callix HTML sheet</p>
+        </footer>
+    </body>
+</html>
